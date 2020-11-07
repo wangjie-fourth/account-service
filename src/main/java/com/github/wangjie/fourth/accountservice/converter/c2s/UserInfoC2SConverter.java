@@ -2,9 +2,11 @@ package com.github.wangjie.fourth.accountservice.converter.c2s;
 
 import com.github.wangjie.fourth.accountservice.model.common.UserInfo;
 import com.google.common.base.Converter;
+import lombok.EqualsAndHashCode;
 import org.springframework.stereotype.Component;
 
 @Component
+@EqualsAndHashCode
 public class UserInfoC2SConverter extends Converter<UserInfo, com.github.wangjie.fourth.accountservice.model.service.UserInfo> {
 
     @Override
